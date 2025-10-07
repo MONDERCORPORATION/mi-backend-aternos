@@ -1,2 +1,2 @@
 # mi-backend-aternos
-conecion directa
+conexion directa
