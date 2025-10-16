@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: mi-backend-aternos
+    env: python
+    buildCommand: ./render-build.sh
+    startCommand: python app.py
