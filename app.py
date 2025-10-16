@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 import os
-import aternos
+import python_aternos
 
 app = Flask(__name__)
 
@@ -18,7 +18,7 @@ def start_server():
     if key != API_KEY:
         return jsonify({"error": "Acceso denegado"}), 403
 
-    atclient = aternos.Client.from_credentials(EMAIL, PASSWORD)
+    atclient = python_aternos.Client.from_credentials(EMAIL, PASSWORD)
     srv = atclient.list_servers()[0]  # Usa tu primer server
     srv.start()
 
