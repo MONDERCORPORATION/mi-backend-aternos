@@ -5,8 +5,8 @@ import aternos
 app = Flask(__name__)
 
 API_KEY = os.environ.get("API_KEY")
-EMAIL = os.environ.get(monderpro11@gmail.com)
-PASSWORD = os.environ.get(MondeR13)
+EMAIL = os.environ.get("EMAIL")
+PASSWORD = os.environ.get("PASSWORD")
 
 @app.route("/")
 def home():
