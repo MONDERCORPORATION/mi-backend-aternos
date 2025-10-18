@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 import os
-import aternos
+import python_aternos
 
 app = Flask(__name__)
 
